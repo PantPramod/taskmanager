@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.taskmanager__header{
+    background: cornflowerblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .leftsidebar{
+    background: rgba(61, 43, 43, 0.767);
+     
+    color:white;
+    flex-basis: 30%;
+    text-align: center;
+
+}
+.leftsidebar ul li{
+    border-bottom: 1px solid white;
+    padding: 10px;
+    font-size: 15px;
+}
+.content{
+flex-basis: 70%;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.active{
+    color:cornflowerblue;
+}
+.alltasks{
+    margin-top: 10px;
+}
+.task{
+    
+    border: 1px solid blue; 
+    margin-bottom: 20px;
+    
+
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.task .message{
+    text-align: center;
+    font-size: 25px;
+    background: blue;
+    color:white;
+    padding: 5px;
+    
+}
+.task .user, .task .duedate, .priority{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.edit{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 4px;
+    width: 200px;
+    background: crimson;
+    color: white;
+    margin-bottom: 20px;
+}
+
+@media (max-width:768px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:column ;
+          
+    }
+   
+    .leftsidebar{
+        width:100%;
+    }
+    .content{
+        width: 100%;
+    }
+}
+@media (min-width:768px){
+    .content{
+        min-height: 100vh;
+    }
+}

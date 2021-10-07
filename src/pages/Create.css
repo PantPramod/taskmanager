@@ -1,0 +1,32 @@
+.create_form{
+
+}
+.create_form .input{
+
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.input label{
+    width:100px;
+    padding: 10px;
+}
+.input textarea{
+    margin: 20px 0;
+    width:70%;
+    height: 120px;
+}
+
+.input input, .input select{
+    width: 70%;
+}
+
+.create{
+    padding: 10px;
+    color:white;
+    background: cornflowerblue;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
